@@ -31,6 +31,7 @@ public class LazyLoadingSingleton {
 	public static LazyLoadingSingleton getInstance() {
 
 		if (instance == null) {
+			// Erzeugung vom Objekt
 			instance = new LazyLoadingSingleton();
 		}
 

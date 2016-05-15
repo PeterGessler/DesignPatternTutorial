@@ -1,9 +1,13 @@
 package de.projects.github.designpattern.structural.decoratorPattern;
 
-/*
- * Interface welches die Operationen für konkrete Komponenten und Dekoratoren bereit stellt.
+/**
+ * 
+ * @author Peter Gessler
+ * @description IComponent beinhaltet Methoden die von JEDER konkreten Klasse implementiert
+ * 				werden müssen.
+ *
  */
 public interface IComponent {
 
-	public void operation();
+	public int operation();
 }

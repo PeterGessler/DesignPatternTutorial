@@ -1,20 +1,26 @@
 package de.projects.github.designpattern.structural.decoratorPattern;
 
-/*
- * Implementierung vom zweiten Dekorator.
+/**
+ * 
+ * @author Peter Gessler
+ * @description Implementierung des zweiten Dekorierers.
+ * 				Der Konstruktor übergibt das Objekt vom Typ IComponent
+ * 				an die Basisklasse.
+ * 
+ * 				operation() ruft die Methode operation() vom Objekt
+ * 				iComp auf und addiert 3.
+ *
  */
 public class SecondDecorator extends AComponentDecorator{
 
-	public SecondDecorator(IComponent cComp) {
-		super(cComp);
-		// TODO Auto-generated constructor stub
+	public SecondDecorator(IComponent iComp) {
+		super(iComp);
 	}
 
 	@Override
-	public void operation() {
-		cComp.operation();
-		System.out.println("I'm the second decorator!");
+	public int operation() {
 		
+		return iComp.operation() + 3;
 	}
 
 	

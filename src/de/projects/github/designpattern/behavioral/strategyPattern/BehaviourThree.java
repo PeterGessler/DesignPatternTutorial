@@ -1,5 +1,11 @@
 package de.projects.github.designpattern.behavioral.strategyPattern;
 
+/**
+ * 
+ * @author Peter Gessler
+ * @description Strategie 3
+ *
+ */
 public class BehaviourThree implements IStrategy {
 
 	@Override

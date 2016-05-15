@@ -1,8 +1,8 @@
 package de.projects.github.designpattern.behavioral.observerPattern.push;
 
-interface IParameterListener {
+interface IObserver {
 
 	public String getObserverName();
 	
-	public void notifyListener (String parameter);
+	public void notifyObserver (String parameter);
 }

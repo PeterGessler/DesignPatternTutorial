@@ -1,5 +1,17 @@
 package de.projects.github.designpattern.structural.compositePattern;
 
+/**
+ * 
+ * @author Peter Gessler
+ * @description Die abstrakte Klasse AComponent bildet die Wurzel im Composite Modell. 
+ * 				Im hier dargestellten Modell sind alle nicht abstrakten Klassen die von
+ * 				AComponent erben gezwungen, operation() als Methode zu implementierten.
+ * 
+ * 				Die Methoden add(AComponent pComponent), remove(AComponent pComponent)
+ * 				und getChild(int pIndex) sind ebenfalls in allen abgeleiteten Klassen
+ * 				aufrufbar, besitzen jedoch keine Implementierung.
+ *
+ */
 public abstract class AComponent {
 
 	// Methode die jede Unterklasse besitzt

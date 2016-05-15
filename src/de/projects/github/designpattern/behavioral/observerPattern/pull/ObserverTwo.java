@@ -1,10 +1,10 @@
 package de.projects.github.designpattern.behavioral.observerPattern.pull;
 
-public class ObserverValueOne implements IParameterListener {
+public class ObserverTwo implements IObserver {
 
-	private ParameterController controller;
+	private Subject controller;
 
-	public ObserverValueOne(ParameterController parameterController) {
+	public ObserverTwo(Subject parameterController) {
 		this.controller = parameterController;
 		
 		controller.addParameterListener(this);
@@ -13,18 +13,17 @@ public class ObserverValueOne implements IParameterListener {
 	@Override
 	public String getObserverName() {
 		// TODO Auto-generated method stub
-		return "ObserverValueOne";
+		return "ObserverValueTwo";
 	}
 
 	@Override
-	public void notifyListener() {
+	public void notifyObserver() {
 
 		showParameter();
 	}
 
 	private void showParameter() {
-		
-		System.out.println(controller.getParameterOne());
+		System.out.println(controller.getParameterTwo());
 		
 	}
 

@@ -1,5 +1,14 @@
 package de.projects.github.designpattern.structural.compositePattern;
 
+/**
+ * @author Peter Gessler
+ * @description Composite enthält alle Methoden zur Verwaltung seiner Kindknoten
+ * 				sowie eine Liste childComponents von diesen.
+ * 				Die Methode getChild ermöglich das Abfragen eines Kindknotens
+ * 				innerhalb der Liste.
+ */
+
+
 import java.util.ArrayList;
 import java.util.List;
 

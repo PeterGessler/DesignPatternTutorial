@@ -1,13 +1,17 @@
 package de.projects.github.designpattern.structural.decoratorPattern;
 
-/*
- * Implementierung einer konkreten Komponente welche es zu dekorieren gibt.
+/**
+ * 
+ * @author Peter Gessler
+ * @description Implementierung einer Hauptkomponente, welche dekoriert werden kann.
+ *
  */
 public class ConcreteComponent implements IComponent{
 
 	@Override
-	public void operation() {
-		System.out.println("I'm an concrete component");		
+	public int operation() {
+
+		return 1;
 	}
 
 }
